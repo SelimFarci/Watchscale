@@ -66,8 +66,11 @@ Operating Instructions:
    - Stepper motor 1 will execute a linear advance cycle, moving the system by the defined distance and then returning to the starting position.
    - Stepper motor 2 will perform angular indexing, rotating to the specified division points, based on the given angular sector.
 
+
+For more details about the project, refer to the PDF file: "rapport_de_projet".
+
+
 License:
 --------
 This project is shared under the **MIT License**. You may freely use, modify, and distribute the code, as long as you respect the attribution requirements. However, all proprietary hardware used is subject to the company's policies.
-
 --------------------------------------------------------------
