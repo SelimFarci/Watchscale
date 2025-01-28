@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2024-05-29" view-index="0" gantt-divider-location="517" resource-divider-location="300" version="3.2.3230" locale="en_GB">
+    <description/>
+    <view zooming-state="default:3" id="gantt-chart">
+        <field id="tpd3" name="Name" width="294" order="0"/>
+        <field id="tpd4" name="Begin date" width="112" order="1"/>
+        <field id="tpd5" name="End date" width="110" order="2"/>
+        <option id="filter.completedTasks" value="false"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="1" name="Analyse du cahier des charges" color="#000000" meeting="false" start="2024-06-03" duration="3" complete="0" thirdDate="2024-05-27" thirdDate-constraint="0" expand="false">
+            <depend id="10" type="2" difference="0" hardness="Strong"/>
+            <depend id="13" type="2" difference="0" hardness="Strong"/>
+            <task id="11" name="Diagramme de cas d'utilisation" color="#8cb6ce" meeting="false" start="2024-06-03" duration="1" complete="0" thirdDate="2024-05-30" thirdDate-constraint="0" expand="true"/>
+            <task id="2" name="Diagramme d'exigence" color="#8cb6ce" meeting="false" start="2024-06-03" duration="3" complete="0" thirdDate="2024-05-03" thirdDate-constraint="0" expand="true"/>
+            <task id="12" name="Diagramme de definition de block" color="#8cb6ce" meeting="false" start="2024-06-03" duration="1" complete="0" thirdDate="2024-05-30" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="33" name="Etude du système" color="#8cb6ce" meeting="false" start="2024-05-31" duration="5" complete="0" thirdDate="2024-05-22" thirdDate-constraint="0" expand="false">
+            <task id="22" name="Programmation STM32CubeIDE" meeting="false" start="2024-05-31" duration="1" complete="0" expand="true"/>
+            <task id="29" name="Choisirs TOUT les composants" color="#8cb6ce" meeting="false" start="2024-05-31" duration="1" complete="0" thirdDate="2024-05-31" thirdDate-constraint="0" expand="false">
+                <task id="30" name="Alimentations" meeting="false" start="2024-05-31" duration="1" complete="0" expand="true"/>
+                <task id="31" name="Wifi" meeting="false" start="2024-05-31" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="23" name="TouchGFX" meeting="false" start="2024-05-31" duration="1" complete="0" expand="true"/>
+            <task id="21" name="Schéma électrique KICAD" meeting="false" start="2024-05-31" duration="1" complete="0" expand="true"/>
+            <task id="3" name="Commander capteurs incrémentation" color="#8cb6ce" meeting="true" start="2024-06-07" duration="0" complete="0" thirdDate="2024-07-05" thirdDate-constraint="0" expand="true"/>
+            <task id="9" name="Commander un écran LCD" color="#8cb6ce" meeting="true" start="2024-06-07" duration="0" complete="0" thirdDate="2024-05-30" thirdDate-constraint="0" expand="true"/>
+            <task id="5" name="Installer les packagins manquant" color="#8cb6ce" meeting="false" start="2024-06-03" duration="1" complete="0" thirdDate="2024-05-31" thirdDate-constraint="0" expand="true"/>
+            <task id="13" name="Etude technologie Ecran" color="#8cb6ce" meeting="false" start="2024-06-06" duration="1" complete="0" thirdDate="2024-05-30" thirdDate-constraint="0" expand="true">
+                <depend id="9" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="10" name="Etude des capteurs" color="#8cb6ce" meeting="false" start="2024-06-06" duration="1" complete="0" thirdDate="2024-05-30" thirdDate-constraint="0" expand="true">
+                <depend id="3" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="37" name="Interface Graphique" meeting="false" start="2024-05-29" duration="1" complete="0" expand="true"/>
+        <task id="38" name="task_38" meeting="false" start="2024-05-29" duration="1" complete="0" expand="true"/>
+        <task id="39" name="Réalisation du système" meeting="false" start="2024-05-29" duration="4" complete="0" expand="true">
+            <task id="34" name="Protoype Moteur" meeting="false" start="2024-05-29" duration="1" complete="0" expand="true"/>
+            <task id="16" name="Prototype V1 capteur incrément" meeting="false" start="2024-06-03" duration="1" complete="0" expand="false">
+                <task id="17" name="Programmation de la STM32" meeting="false" start="2024-06-03" duration="1" complete="0" expand="true"/>
+                <task id="18" name="Câblages" meeting="false" start="2024-06-03" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="40" name="Prototype communcation entre les deux cartes" meeting="false" start="2024-05-29" duration="1" complete="0" expand="true"/>
+            <task id="36" name="Prototypes fonction interface graphique" meeting="false" start="2024-05-29" duration="1" complete="0" expand="true"/>
+            <task id="41" name="Prototypes complet" meeting="false" start="2024-05-29" duration="1" complete="0" expand="true"/>
+        </task>
+        <task id="8" name="Interface V0" color="#8cb6ce" meeting="false" start="2024-06-03" duration="1" complete="0" thirdDate="2024-05-30" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+    <roles>
+        <role id="1" name="Ingénieur 1 (Selim)"/>
+        <role id="2" name="Ingénieur 2 (Abdelkarim)"/>
+    </roles>
+</project>

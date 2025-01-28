@@ -1,0 +1,24 @@
+--------------------------------------------------------------
+                            Licence - Usage Non Commercial
+--------------------------------------------------------------
+
+Copyright (c) [Ton Nom ou Nom de l'Organisation] [Année]
+
+Ce travail est protégé par la licence Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+Vous êtes libre de :
+
+- Partager : copier, distribuer et transmettre l'œuvre.
+- Adapter : modifier, transformer et construire à partir de l'œuvre.
+
+Sous les conditions suivantes :
+
+1. **Crédit** : Vous devez donner un crédit approprié à l'auteur (vous), fournir un lien vers la licence et indiquer si des modifications ont été apportées. Vous pouvez faire cela de manière raisonnable, mais pas d'une manière qui suggérerait que l'auteur vous soutient ou approuve votre utilisation.
+   
+2. **Usage Commercial avec Accord Préalable** : L'usage commercial de ce travail n'est autorisé qu'après avoir obtenu l'accord préalable de l'auteur. Si vous souhaitez utiliser ce travail dans un cadre commercial (ex. produits, services, entreprises, etc.), contactez l'auteur à l'adresse suivante : [Ton adresse email ou moyen de contact] pour discuter des termes d'une licence commerciale.
+
+3. **Non-Commercial** : Tant que l'usage reste non commercial, vous êtes libre d'utiliser, modifier et partager le travail.
+
+Vous pouvez consulter les détails complets de la licence CC BY 4.0 ici :
+https://creativecommons.org/licenses/by/4.0/
+--------------------------------------------------------------
