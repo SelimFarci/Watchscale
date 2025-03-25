@@ -1,76 +1,75 @@
---------------------------------------------------------------
-                      DRO and DIVIDER Systems Project
---------------------------------------------------------------
+# 🧭 DRO & DIVIDER Systems – Embedded Control Interface for Watchmaking Machinery
 
-Description:
--------------
-The **DRO System** (Digital Read-Out) and **DIVIDER System** are developed as complementary systems to improve the functionality of vintage industrial watchmaking machines. The primary objective of the project is to modernize these old machines by adding precision controls while maintaining their antique appearance. These machines are highly valuable collector's items and their preservation is essential.
+> Embedded systems project developed during a summer internship – ENSEA (2024)
 
-The **DRO System** displays and modifies values from sensors and linear scales through a 7” touch screen controller. It also serves as the control center for the entire system, with a graphical user interface (GUI) that provides various functions such as setting zero points, adjusting values, and controlling the spindle.
+## 📌 Project Summary
 
-The **DIVIDER System** complements the DRO system by controlling two stepper motors. These motors perform various functions such as linear advance cycles and angular indexing, with precision screw/nut systems and screw and endless wheel systems.
+This project involved designing and prototyping two embedded control systems — a **Digital Read-Out (DRO)** interface and a **DIVIDER** motor control module — to modernize mechanical watchmaking machines, without altering their vintage aesthetic.
 
-**Note**: This project is non-confidential and can be shared publicly in accordance with the confidentiality policies of the company.
+We developed a full-stack embedded application based on STM32 microcontrollers, including sensor data acquisition, user interface development (TouchGFX), real-time control of motors, and communication between devices.
 
-Features:
----------
-1. **DRO System**:
-   - Touchscreen interface (7” controller).
-   - Displays values from RL2IC sensors.
-   - Controls multiple axes with values from linear scales.
-   - Allows the user to perform various functions:
-     - **ZERO**: Set values to 0.
-     - **Ø / R**: Double the value (Ø = Diameter) or reset to the original (R = Radius).
-     - **+ / -**: Add or subtract a value.
-     - **Spindle speed**: Displays spindle motor speed.
-     - **Spindle torque**: Displays spindle motor torque.
-   - Functions through a graphical user interface with control buttons and menus.
+> 💡 Non-confidential project – suitable for public sharing.
 
-2. **DIVIDER System**:
-   - Controls 2 stepper motors for:
-     - **Linear advance cycle**: Motor 1 drives a precision screw/nut system to perform a linear movement.
-     - **Angular indexing**: Motor 2 performs angular indexing by rotating to a defined number of divisions.
-   - Operates based on the angular zero bridge and current linear zero point.
-   - Uses sensors to monitor the angular position, ensuring precision in every cycle.
+---
 
-3. **System Integration**:
-   - The DRO system and DIVIDER system work together to enhance the user experience, providing precise control over the movements of the watchmaking machines.
-   - The microprocessor in the DRO system manages both systems, ensuring smooth operation and synchronization.
+## 🔧 Key Features
 
-Materials and Hardware Used:
-----------------------------
-- **DRO System**: 
-  - 7” touch screen display
-  - RL2IC sensors
-  - Microprocessor (e.g., STM32 or equivalent)
-  - Various control switches and buttons
-  - Power supply
+### 🖥️ DRO System (Main Controller)
+- 7” capacitive touchscreen interface
+- Real-time display of axis positions (X/Y/Z)
+- GUI with control functions: 
+  - `ZERO`, `Ø/R`, `+/-`, spindle speed, and torque
+- Interfaces: RL2IC sensors, UART, I2C, RS422
 
-- **DIVIDER System**:
-  - Stepper motors (2)
-  - Precision screw/nut system
-  - Screw and endless wheel system
-  - Angular position sensors
-  - Circular scale for angular indexing
+### ⚙️ DIVIDER System
+- Dual stepper motor control:
+  - Linear advance (motor 1)
+  - Angular indexing (motor 2)
+- Precision via screw/nut + endless screw systems
+- Controlled from DRO board via I2C
 
-Operating Instructions:
------------------------
-1. **DRO System**:
-   - Power on the system and the touchscreen will display the main menu.
-   - Select the desired axis to monitor values.
-   - Use the function buttons to interact with the system (e.g., setting zero, changing values, adjusting spindle speed and torque).
-   - The DRO system will continuously update values in real-time as inputs are modified.
+---
 
-2. **DIVIDER System**:
-   - Once the DRO system is calibrated and zeroed, the DIVIDER system will begin its cycle.
-   - Stepper motor 1 will execute a linear advance cycle, moving the system by the defined distance and then returning to the starting position.
-   - Stepper motor 2 will perform angular indexing, rotating to the specified division points, based on the given angular sector.
+## 🧠 Technical Stack
 
+| Category              | Tools / Technologies                     |
+|-----------------------|------------------------------------------|
+| Embedded Programming  | C, STM32CubeIDE, HAL drivers             |
+| GUI Development       | TouchGFX                                 |
+| Microcontrollers      | STM32F411xE (Nucleo), STM32H7 (Riverdi) |
+| Communication         | I2C, UART, RS422                         |
+| Signal Prototyping    | Logic Analyzer, Oscilloscope, Putty      |
+| Hardware Design       | KiCad (schematics), sensors, motors      |
+| Components            | RS485 Click, UART Mux, Incremental encoders, NEMA 17, Riverdi 7" LCD |
 
-For more details about the project, refer to the PDF file: "rapport_de_projet".
+---
 
+## 🛠️ Main Contributions
 
-License:
---------
-This project is shared under the **MIT License**. You may freely use, modify, and distribute the code, as long as you respect the attribution requirements. However, all proprietary hardware used is subject to the company's policies.
---------------------------------------------------------------
+✅ Designed and implemented a user-friendly GUI on STM32 using TouchGFX  
+✅ Developed communication interfaces (I2C, UART, RS422) between boards and sensors  
+✅ Integrated stepper motor drivers with PWM and direction control  
+✅ Built functional hardware prototypes with debugging via logic analyzers  
+✅ Collaborated directly with a non-technical client to translate mechanical requirements into embedded specs
+
+---
+
+## 📸 Screenshots
+
+> See full PDF report with schematics, GUI designs and prototyping photos here:  
+📄 [Rapport_de_projet_Watchscale.pdf](./Rapport_de_projet_Watchscale.pdf)
+
+---
+
+## 👨‍💻 Authors
+
+- **Selim Farci** – Embedded Systems Engineering Student (ENSEA)  
+- **Abdelkader Chambi** – Embedded Systems Engineering Student (ENSEA)  
+- **Eyraud Michaël** – Internship supervisor and initiator of the project (Mécaniquement Vôtre)
+
+---
+
+## 🪪 License
+
+This project is released under the **MIT License**.  
+Note: proprietary hardware is subject to company use policies.
